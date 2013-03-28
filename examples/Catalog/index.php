@@ -2,6 +2,8 @@
 require_once '../../src/ParseXML.php';
 require_once 'Book.php';
 
+use ParseXML\ParseXML\ParseXML;
+
 $parseXML = new ParseXML('book', 'Book', 'display');
 try {
   $parseXML->parseFile("catalog.xml");
