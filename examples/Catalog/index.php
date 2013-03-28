@@ -1,5 +1,5 @@
 <?php
-require_once '../../src/ParseXML.php';
+require_once '../../src/ParseXML/ParseXML.php';
 require_once 'Book.php';
 
 use ParseXML\ParseXML\ParseXML;
