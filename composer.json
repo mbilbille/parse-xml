@@ -1,5 +1,5 @@
 {
-  "name": "parsexml/parsexml",
+  "name": "mbilbille/parsexml",
   "type": "library",
   "description": "Need to parse a big huge XML file? Describe it and parse it!",
   "keywords": [
