@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace ParseXML\ParseXML;
+namespace ParseXML;
 
 define('PX_STATUS_NULL', 0);
 define('PX_STATUS_OPEN', 1);
@@ -125,7 +125,7 @@ class ParseXML
 
     if ($tag === $this->name) {
       $callback = $this->callback;
-      if (function_exists($callback)) {
+      if (is_callable($callback)) {
         $callback($this->element);
       }
       unset($this->element);

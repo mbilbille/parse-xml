@@ -2,7 +2,7 @@
 require_once '../../src/ParseXML/ParseXML.php';
 require_once 'Book.php';
 
-use ParseXML\ParseXML\ParseXML;
+use ParseXML\ParseXML;
 
 $parseXML = new ParseXML('book', 'Book', 'display');
 try {
