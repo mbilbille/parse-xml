@@ -55,7 +55,7 @@ class ParseXML
   public function parse($data)
   {
     if (!xml_parse($this->parser, $data)) {
-      throw new Exception(sprintf("XML error : %s while parsing %d", xml_error_string(xml_get_error_code($this->parser)), xml_get_current_line_number($this->parser)), 1);
+      throw new \Exception(sprintf("XML error : %s while parsing %d", xml_error_string(xml_get_error_code($this->parser)), xml_get_current_line_number($this->parser)), 1);
     }
   }
 
@@ -65,7 +65,7 @@ class ParseXML
   public function parseFile($file)
   {
     if (!($fp = fopen($file, "r"))) {
-      throw new Exception("Cannot open " . $file, 1);
+      throw new \Exception("Cannot open " . $file, 1);
     }
 
     while ($data = fread($fp, 65536)) {
