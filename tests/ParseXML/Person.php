@@ -16,12 +16,12 @@ class Person
     return $this->$name;
   }
 
-  public function set_firstname($firstname)
+  public function setFirstname($firstname)
   {
     $this->firstname = $firstname;
   }
 
-  public function set_lastname($lastname)
+  public function setLastname($lastname)
   {
     $this->lastname = $lastname;
   }

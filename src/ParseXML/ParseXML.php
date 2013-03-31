@@ -139,7 +139,7 @@ class ParseXML
    */
   private function maker()
   {
-    $maker = 'make_' . $this->pointer->tag;
+    $maker = 'make' . $this->pointer->tag;
     if (method_exists($this->class, $maker)) {
       $this->element->$maker();
     }
@@ -147,7 +147,7 @@ class ParseXML
 
   private function setter($data = null, $attributes = array())
   {
-    $setter = 'set_' . $this->pointer->tag;
+    $setter = 'set' . $this->pointer->tag;
     if (method_exists($this->class, $setter)) {
       $this->element->$setter($data, $attributes);
     }

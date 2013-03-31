@@ -24,27 +24,27 @@ class Book
     return $this->$name;
   }
 
-  public function set_author($author)
+  public function setAuthor($author)
   {
     $this->author = $author;
   }
 
-  public function set_genre($author)
+  public function setGenre($author)
   {
     $this->genres[] = $author;
   }
 
-  public function set_price($price)
+  public function setPrice($price)
   {
     $this->price = is_numeric($price) ? $price : 0;
   }
 
-  public function set_publish_date($date)
+  public function setPublishDate($date)
   {
     $this->publish_date = $date;
   }
 
-  public function set_description($description)
+  public function setDescription($description)
   {
     $this->description = $description;
   }
