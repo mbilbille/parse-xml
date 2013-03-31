@@ -9,7 +9,7 @@ Basically just an XML parser among so many others. But this one is especially de
 
 ## Usage
 
-Coming soon, until you should the _examples_ folder.
+Coming soon, until then you should use the _examples_ folder.
 
 
 ## License
